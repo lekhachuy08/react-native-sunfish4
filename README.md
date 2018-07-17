@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-sunfish --save`
+`$ npm install react-native-sunfish4 --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-sunfish`
+`$ react-native link react-native-sunfish4`
 
 ### Manual installation
 
@@ -50,4 +50,3 @@ import RNSunfish from 'react-native-sunfish';
 // TODO: What to do with the module?
 RNSunfish;
 ```
-  
