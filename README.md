@@ -1,5 +1,5 @@
 
-# react-native-sunfish
+# react-native-sunfish4
 
 ## Getting started
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-sunfish` and add `RNSunfish.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-sunfish4` and add `RNSunfish.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNSunfish.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +26,18 @@
   - Add `new RNSunfishPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-sunfish'
-  	project(':react-native-sunfish').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-sunfish/android')
+  	include ':react-native-sunfish4'
+  	project(':react-native-sunfish4').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-sunfish4/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-sunfish')
+      compile project(':react-native-sunfish4')
   	```
 
 #### Windows
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. In Visual Studio add the `RNSunfish.sln` in `node_modules/react-native-sunfish/windows/RNSunfish.sln` folder to their solution, reference from their app.
+1. In Visual Studio add the `RNSunfish.sln` in `node_modules/react-native-sunfish4/windows/RNSunfish.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using Sunfish.RNSunfish;` to the usings at the top of the file
   - Add `new RNSunfishPackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -45,7 +45,7 @@
 
 ## Usage
 ```javascript
-import RNSunfish from 'react-native-sunfish';
+import RNSunfish from 'react-native-sunfish4';
 
 // TODO: What to do with the module?
 RNSunfish;
