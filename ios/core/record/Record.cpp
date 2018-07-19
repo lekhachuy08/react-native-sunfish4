@@ -9,7 +9,7 @@
 namespace sunfish {
 
 Position generatePosition(const Record& record,
-                          int numberOfMoves) {
+                          int numberOfMoves) throw (int) {
   Position pos = record.initialPosition;
 
   if (numberOfMoves < 0 || static_cast<size_t>(numberOfMoves) > record.moveList.size()) {
@@ -22,7 +22,7 @@ Position generatePosition(const Record& record,
     if (!pos.doMove(move, captured)) {
       LOG(error) << "fatal error: an illegal move is contained: "
                  << StringUtil::ordinal << ": " << move.toString();
-      exit(1); // TODO: return error
+      throw 1; // TODO: return error
     }
   }
 

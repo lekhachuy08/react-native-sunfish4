@@ -18,7 +18,7 @@
 
 namespace sunfish {
 	
-	Usi::Usi() : breakReceiver_(false), isBookLoaded(false) {	
+	Usi::Usi() : breakReceiver_(false), isBookLoaded(false) {
 		options_.ponder = true;
 		options_.hash = 0;
 		options_.useBook = true;
@@ -35,7 +35,7 @@ namespace sunfish {
 			isBookLoaded = true;
 		}
 		
-//		lastPositionCommand_ = command.value;
+		//		lastPositionCommand_ = command.value;
 	}
 	
 	std::string Usi::getBestMove(const std::string listOfMoves) {
@@ -63,11 +63,17 @@ namespace sunfish {
 		
 		// check opening book
 		if (options_.useBook) {
-			auto pos = generatePosition(record_, -1);
-			Move bookMove = BookUtil::select(book_, pos, random_);
-			if (!bookMove.isNone()) {
-				return bookMove.toStringSFEN();
+			Position pos;
+			try {
+				pos = generatePosition(record_, -1);
+				Move bookMove = BookUtil::select(book_, pos, random_);
+				if (!bookMove.isNone()) {
+					return bookMove.toStringSFEN();
+				}
+			} catch(int e) {
+				return "gameover";
 			}
+			
 		}
 		
 		searcherIsStarted_ = false;

@@ -61,7 +61,7 @@ struct Record {
  * if numberOfMoves is a negative number, returns the last position.
  */
 Position generatePosition(const Record& record,
-                          int numberOfMoves);
+                          int numberOfMoves) throw (int);
 
 } // namespace sunfish
 
