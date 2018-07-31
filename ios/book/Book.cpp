@@ -12,7 +12,7 @@
 
 namespace {
 
-const char* const BookBin = "book.bin";
+const char* const BookBin = "../book.bin";
 
 } // namespace
 

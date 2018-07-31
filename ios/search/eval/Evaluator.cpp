@@ -14,7 +14,7 @@
 
 namespace {
 
-const char* const EvalBin = "eval.bin"; // optimized
+const char* const EvalBin = "../../eval.bin"; // optimized
 const char* const EvalExBin = "eval-ex.bin"; // expanded
 
 CONSTEXPR_CONST Score EnteringKing = 1000;

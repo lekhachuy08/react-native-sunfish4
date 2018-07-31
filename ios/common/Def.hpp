@@ -3,7 +3,7 @@
  * Kubo Ryosuke
  */
 
-#define MATERIAL_LEARNING_ONLY 1
+//#define MATERIAL_LEARNING_ONLY 1
 
 #ifndef SUNFISH_COMMON_DEF_HPP__
 #define SUNFISH_COMMON_DEF_HPP__
