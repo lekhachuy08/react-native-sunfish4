@@ -10,13 +10,16 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(getBestMove: (NSString *)listOfMoves
 				  callback: (RCTResponseSenderBlock) callback) {
-	sunfish::CoreUtil::initialize();
-	sunfish::SearchUtil::initialize();
 	sunfish::Usi usi;
 	std::string thisMoves = std::string([listOfMoves UTF8String]);
 	std::string result = usi.getBestMove(thisMoves);
 	NSString *thingToReturn = [NSString stringWithUTF8String:result.c_str()];
 	callback(@[[NSNull null], thingToReturn]);
+}
+
+RCT_EXPORT_METHOD(init: (NSString *)s) {
+	sunfish::CoreUtil::initialize();
+	sunfish::SearchUtil::initialize();
 }
 
 @end
