@@ -172,8 +172,7 @@
 		20011CDF20FCB46400135368 /* Piece.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Piece.hpp; sourceTree = "<group>"; };
 		20011CE020FCB46400135368 /* Turn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Turn.hpp; sourceTree = "<group>"; };
 		20011CE120FCB46400135368 /* Square.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
-		20B0A203210FFB73007DF9E8 /* book.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = book.bin; sourceTree = "<group>"; };
-		20B0A204210FFB73007DF9E8 /* eval.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = eval.bin; sourceTree = "<group>"; };
+		20C505C3211E6D7F0073F8E4 /* bookbin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bookbin.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -565,8 +564,7 @@
 				20011CB720FCB46400135368 /* logger */,
 				20011C9020FCB46400135368 /* RNSunfish.h */,
 				20011C5720FCB46400135368 /* RNSunfish.mm */,
-				20B0A203210FFB73007DF9E8 /* book.bin */,
-				20B0A204210FFB73007DF9E8 /* eval.bin */,
+				20C505C3211E6D7F0073F8E4 /* bookbin.hpp */,
 				20011C5820FCB46400135368 /* search */,
 				20011C5020FCB46400135368 /* usi */,
 				134814211AA4EA7D00B7C361 /* Products */,
