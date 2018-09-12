@@ -3,6 +3,7 @@
  * Kubo Ryosuke
  */
 
+#include "../../evalbin.h"
 #include "Evaluator.hpp"
 #include "FeatureTemplates.hpp"
 #include "Material.hpp"
@@ -234,6 +235,9 @@ bool load(Evaluator::FVType& fv) {
 }
 
 bool load(const char* path, Evaluator::OFVType& ofv) {
+  memcpy(&ofv, eval, eval_len);
+  return true;
+/*
   std::ifstream file(path, std::ios::in | std::ios::binary);
   if (!file) {
     LOG(warning) << "failed to open: " << path;
@@ -268,6 +272,7 @@ bool load(const char* path, Evaluator::OFVType& ofv) {
   file.close();
 
   return true;
+ */
 }
 
 bool load(Evaluator::OFVType& ofv) {
